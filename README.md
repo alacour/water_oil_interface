@@ -1,4 +1,4 @@
-# water_oil_interface
+# Examining water-oil interface
 Example analysis scripts for paper examining water-oil interface with Raman spectroscopy. Scripts are contained within Jupyter notebooks in the directories given below.
 
 ./Raman_analysis contains scripts used in analying the computational Raman of the interface.
