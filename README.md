@@ -7,4 +7,6 @@ Example analysis scripts for paper examining water-oil interface with Raman spec
 
 ./amoeba_analysis/example_Raman_calculation contains a signac workspace used for computing Raman frequencies from electric fields. It also contains all scripts used for computing the Raman spectra.
 
+./conda.txt gives the conda environment
+
 
