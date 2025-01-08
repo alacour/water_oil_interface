@@ -7,12 +7,11 @@ from scipy.optimize import curve_fit
 from scipy.special import erf
 from joblib import Parallel, delayed
 from skimage import measure
-import pandas as pd
 import mdtraj
 
 def instantaneous_interface(gridmul):
     #Loading Data
-    traj = mdtraj.load_dcd("../../combined_sampled_trajectory.dcd", "../../begin.pdb") 
+    traj = mdtraj.load_dcd("../../combined_sampled_trajectory.dcd", "../../begin.pdb") #DCD output for simulation
 
     poses = []
     boxes = []
