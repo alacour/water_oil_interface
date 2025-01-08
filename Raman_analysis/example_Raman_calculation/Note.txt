@@ -1,0 +1,1 @@
+Job was run in a slurm environment by running "sbatch pressjob.sh"
