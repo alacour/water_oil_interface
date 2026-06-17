@@ -1,0 +1,32 @@
+# Curated environment for water_oil_interface.
+#
+# Create with:
+#   conda env create -f environment.yml
+#   conda activate water_oil_interface
+#
+# Pins are loose (major.minor) to stay portable across platforms. The original
+# fully-pinned osx-arm64 export lived in conda.txt; this replaces it with just
+# the project's direct dependencies, inferred from imports in the scripts and
+# notebooks.
+name: water_oil_interface
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  # core scientific stack
+  - numpy=1.23
+  - scipy=1.9
+  - matplotlib=3.6
+  - scikit-learn=1.1
+  - scikit-image=0.19
+  - joblib=1.2
+  # molecular simulation / analysis
+  - mdtraj=1.9
+  - freud=2.11
+  - gsd=2.6
+  # workflow management
+  - signac=1.8
+  - signac-flow   # provides the `flow` package imported by the signac project;
+                  # was missing from the original conda.txt export
+  # notebooks
+  - jupyter
